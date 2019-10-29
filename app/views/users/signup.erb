@@ -1,15 +1,5 @@
-<form action="/signup" method="post">
-  <label>Username</label><br>
-  <input type="text" name="user[username]">
-  <br>
+<h2>Users</h2>
 
-  <label>Email</label><br>
-  <input type="text" name="user[email]">
-  <br>
-
-  <label>Password</label><br>
-  <input type="text" name="user[password]">
-  <br>
-
-  <input type="submit" value="Submit">
-</form>
+<% unless locals.empty? %>
+  <%= message %>
+<% end %>
